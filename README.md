@@ -11,7 +11,7 @@ ______
 ### Data
 
 Complete training and test data download link:
-1. <[https://pan.baidu.com/s/1SLR0QKVyMWOOuYIYgcNv_Q?pwd=7ja6](https://pan.baidu.com/s/1ouWO2_UOETt7WXTZQkbfyA?pwd=jmcy)https://pan.baidu.com/s/1ouWO2_UOETt7WXTZQkbfyA?pwd=jmcy>
+1. <https://pan.baidu.com/s/1SLR0QKVyMWOOuYIYgcNv_Q?pwd=7ja6>
 
 ### Test
 Noting that we conduct testing using MATLAB, and the testing code link is as follows:

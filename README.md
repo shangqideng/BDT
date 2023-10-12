@@ -21,6 +21,8 @@ Noting that we conduct testing using MATLAB, and the testing code link is as fol
 ______
 
 ### Bib reference
+If this article has been helpful to you, please cite it as follows：
+
 @article{dengbidirectional,
   title={Bidirectional Dilation Transformer for Multispectral and Hyperspectral Image Fusion},
   booktitle={the 32nd International Joint Conference on Artificial Intelligence},

@@ -90,27 +90,7 @@ def test(test_data_loader):
         # ref = ref.cuda()
         out = model(input_rgb, input_lr_u, ms)
 
-        ref = ref.detach().cpu().numpy()
-        out1 = out.detach().cpu().numpy()
-        psnr = calc_psnr(ref, out1)
-        sam = calc_sam(ref, out1)
-        ergas = calc_ergas(ref, out1)
-        psnr_list.append(psnr)
-        sam_list.append(sam)
-        ergas_list.append(ergas)
-
-        # rmse = calc_rmse(ref, out)
-        # ergas = calc_ergas(ref, out)
-        # sam = calc_sam(ref, out)
-        # print('RMSE:   {:.4f};'.format(rmse))
-        # print('PSNR:   {:.4f};'.format(psnr))
-        # print('ERGAS:   {:.4f};'.format(ergas))
-        # print('SAM:   {:.4f}.'.format(sam))
-
         output[index, :, :, :] = out.permute(0, 2, 3, 1).cpu().detach().numpy()
-    print('PSNR:   {:.4f};'.format(np.array(psnr_list).mean()))
-    print('SAM:   {:.4f};'.format(np.array(sam_list).mean()))
-    print('ERGAS:   {:.4f};'.format(np.array(ergas_list).mean()))
     sio.savemat('cave11_x4-bdt.mat', {'output': output})
 
 
